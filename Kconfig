@@ -1,0 +1,30 @@
+menu "ESP-IDF KWS Engine Configuration"
+
+    config ESP_KWS_DEFAULT_WAKE_THRESHOLD
+        int "Default Wake Word Detection Threshold (percentage 10-99)"
+        range 10 99
+        default 80
+        help
+            Confidence percentage required to trigger wake word detection (default 80%).
+
+    config ESP_KWS_DEFAULT_CMD_THRESHOLD
+        int "Default Command Detection Threshold (percentage 10-99)"
+        range 10 99
+        default 75
+        help
+            Confidence percentage required to trigger command word detection (default 75%).
+
+    config ESP_KWS_COMMAND_TIMEOUT_MS
+        int "Command Listening Timeout in Milliseconds"
+        range 1000 10000
+        default 3500
+        help
+            Duration after wake detection to wait for an incoming command phrase before resetting to idle.
+
+    config ESP_KWS_NUM_MEL_BINS
+        int "Audio Frontend Mel Filterbank Channels"
+        default 40
+        help
+            Number of log-mel filterbank bins extracted per audio frame.
+
+endmenu

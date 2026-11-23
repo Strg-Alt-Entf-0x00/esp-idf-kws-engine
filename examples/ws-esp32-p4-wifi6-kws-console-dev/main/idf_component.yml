@@ -1,0 +1,18 @@
+dependencies:
+  idf:
+    version: ">=6.0.2"
+
+  esp-idf-kws-engine:
+    path: "../../"
+
+  esp-idf-pulsevad:
+    git: "https://github.com/Strg-Alt-Entf-0x00/esp-idf-pulsevad.git"
+
+  esp-idf-model-manager:
+    git: "https://github.com/Strg-Alt-Entf-0x00/esp-idf-model-manager.git"
+
+  espressif/esp-dsp:
+    version: "^1.8.2"
+
+  espressif/esp_codec_dev:
+    version: "^1.6.2"

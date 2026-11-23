@@ -1,0 +1,28 @@
+name: "esp-idf-kws-engine"
+version: "1.0.0"
+description: "Streaming Keyword Spotting & Command Word Engine for ESP-IDF (ESP32-P4 / ESP32-S3) with native C inference and ESPM container support"
+url: "https://github.com/Strg-Alt-Entf-0x00/esp-idf-kws-engine"
+repository: "https://github.com/Strg-Alt-Entf-0x00/esp-idf-kws-engine.git"
+issues: "https://github.com/Strg-Alt-Entf-0x00/esp-idf-kws-engine/issues"
+license: "PolyForm-Noncommercial-1.0.0"
+targets:
+  - esp32p4
+  - esp32s3
+
+tags:
+  - kws
+  - wakeword
+  - audio
+  - dsp
+  - speech
+  - machine-learning
+
+dependencies:
+  idf:
+    version: ">=6.0.2"
+
+  esp-idf-model-manager:
+    git: "https://github.com/Strg-Alt-Entf-0x00/esp-idf-model-manager.git"
+
+  espressif/esp-dsp:
+    version: "^1.8.2"
