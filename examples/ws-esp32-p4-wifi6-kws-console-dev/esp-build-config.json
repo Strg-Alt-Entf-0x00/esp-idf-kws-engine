@@ -7,15 +7,20 @@
         "path": null
     },
     "serial": {
-        "monitor_baudrate": 115200,
         "port": "COM4",
-        "flash_baudrate": 921600
+        "flash_baudrate": 921600,
+        "monitor_baudrate": 115200
     },
     "storage": {
         "flash_images": true
     },
     "build": {
         "ccache": true
+    },
+    "logging": {
+        "enabled": true,
+        "directory": ".logs",
+        "keep_last_n_logs": 50
     },
     "version": 1
 }
